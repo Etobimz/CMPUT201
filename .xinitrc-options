@@ -1,0 +1,9 @@
+# Below are valid choices for window managers
+# The supported window manager
+my_window_manager="xfce"
+
+# Unsupported window managers below
+#my_window_manager="ice"
+#my_window_manager="fvwm"
+#my_window_manager="awesome"
+#my_window_manager="i3"
