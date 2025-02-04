@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if  [[ $# -ne  2 ]]; then
+	echo " Usage: ./runTests_sample commandToTest testSetFile "
+        exit 1
+fi
+
+
+for st in $(cat ${2}); do
+	args=$(< "${st}.args")
+	$1 $args <  "${st}.in"  >  temp_out
+        diff -q "${st}.out" temp_out > /dev/null
+        status=$?
+        if [[ $status -eq 0 ]]; then
+                echo " Test "${st}.in" passed "
+        elif [[ $status -eq 1 ]]; then
+                echo " Test "${st}.in" failed "
+                echo " Expected output; "
+                cat "${st}.out"
+                echo " Actual  output; "
+                cat  temp_out
+        fi 
+done
+
+rm -f temp_out  # Clean up the temp file
+        
