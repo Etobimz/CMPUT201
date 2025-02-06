@@ -8,6 +8,18 @@ int readint() {
    * whitespace, and then stop reading the integer the first
    * time a non-digit character is read.
    */
+
+	 char  ch;
+	int num = 0;
+	while (( ch =  getchar()) == ' ' || ch == '\t'  || ch == '\n' ) { }; //{} do nothing
+
+
+	while  ( ch  >= '0' && ch <= '9' ) { 
+	num = num * 10 + (ch -  '0');
+	ch = getchar();
+
+}
+	return num;
 }
 
 int main() {

@@ -1,129 +1,3 @@
-#1738199947
-nano produceOutputs
-#1738199957
-cd ..
-#1738199960
-nano produceOutputs
-#1738200043
-cd test1
-#1738200047
-nano wc_set.txt
-#1738200084
-
-#1738200086
-ls
-#1738200125
-nano produceOutputs
-#1738200930
-mv  produceOutputs produceOutputsBuggy
-#1738200937
-nano produceOutputsBuggy
-#1738201260
-./produceOutputsBuggy wc wc_set.txt
-#1738201267
-ls
-#1738201310
-mv produceOutputsBuggy test1
-#1738201316
-cd test1
-#1738201317
-ls
-#1738201324
-./produceOutputsBuggy wc wc_set.txt
-#1738201345
-nano produceOutputsBuggy
-#1738201395
-./produceOutputsBuggy wc wc_set.txt
-#1738201405
-nano produceOutputsBuggy
-#1738201437
-./produceOutputsBuggy wc wc_set.txt
-#1738201445
-nano produceOutputsBuggy
-#1738201565
-./produceOutputsBuggy wc wc_set.txt
-#1738201575
-nano produceOutputsBuggy
-#1738201617
-./produceOutputsBuggy wc wc_set.txt
-#1738201622
-nano produceOutputsBuggy
-#1738201672
-nano produceOutputs
-#1738201708
-chmod a+wrx produceOutputs
-#1738201711
-nano produceOutputs
-#1738201745
-nano produceOutputsBuggy
-#1738201776
-nano produceOutputs
-#1738202608
-nano produceOutputsBuggy
-#1738202672
-nano produceOutputs
-#1738203187
-./produceOutputs wc wc_set.txt
-#1738203192
-nano produceOutputs
-#1738203273
-./produceOutputs wc wc_set.txt
-#1738203282
-nano produceOutputs
-#1738203384
-./produceOutputs wc wc_set.txt
-#1738203410
-nano produceOutputs
-#1738203468
-./produceOutputs wc wc_set.txt
-#1738203477
-nano produceOutputs
-#1738203501
-./produceOutputs wc wc_set.txt
-#1738203511
-nano produceOutputs
-#1738203545
-./produceOutputs wc wc_set.txt
-#1738203564
-./produceOutputsBuggy wc wc_set.txt
-#1738203573
-nano produceOutputsBuggy
-#1738203588
-nano produceOutputs
-#1738203627
-./produceOutputs wc wc_set.txt
-#1738203636
-nano produceOutputs
-#1738203671
-nano produceOutputsBuggy
-#1738203698
-nano produceOutputs
-#1738203773
-./produceOutputs wc wc_set.txt
-#1738203812
-./produceOutputsBuggy wc wc_set.txt
-#1738203815
-./produceOutputs wc wc_set.txt
-#1738203831
-nano produceOutputs
-#1738204004
-cd ..
-#1738204011
-ls
-#1738204046
-./testDescribe set1.txt
-#1738204078
-./runTests_sample ./testDescribe set1.txt
-#1738204109
-ls
-#1738204155
-nano testDescribe 
-#1738221988
-ls
-#1738222010
-cd 201-W25  
-#1738222029
-ls
 #1738222036
 cd a1
 #1738222039
@@ -998,3 +872,129 @@ cat test2.out
 cat test3.out
 #1738806530
 nano read_int.c
+#1738822129
+git remote -v
+#1738822241
+ls
+#1738822249
+cd 201-W25
+#1738822253
+git remote -v
+#1738822259
+ls
+#1738822312
+git status
+#1738822955
+git remote add myrepo https://github.com/Etobimz/CMPUT201.git
+#1738822960
+git remote -v
+#1738823281
+git status
+#1738823406
+git branch --set-upstream-to=myrepo/main main
+#1738823943
+git remote -v
+#1738823967
+git fetch myrepo
+#1738823993
+git branch --set-upstream-to=myrepo/main main
+#1738824008
+git branch -vv
+#1738824069
+git pull --rebase myrepo main
+#1738824133
+git reset --hard 
+#1738824149
+git pull --rebase myrepo main 
+#1738824378
+git status
+#1738824590
+git fetch myrepo
+#1738824590
+git rebase myrepo/main
+#1738824637
+ls
+#1738824645
+cd ..
+#1738824647
+ls
+#1738824655
+git remote -v
+#1738824679
+pwd
+#1738824923
+cd 201-W25
+#1738824925
+ls
+#1738824941
+mv lab4 /cshome/olarinde
+#1738824944
+ls
+#1738824956
+mv lab3 /cshome/olarinde
+#1738824967
+ls
+#1738824971
+cd ..
+#1738824972
+ls
+#1738824985
+cd lab2
+#1738824986
+ls
+#1738824995
+nano bad_repeat
+#1738825006
+cd 201-W25
+#1738825007
+ls
+#1738825014
+cd ..
+#1738825023
+cd 201-W25
+#1738825024
+ls
+#1738825031
+cd lab2
+#1738825033
+ls
+#1738825040
+nano bad_repeat
+#1738825059
+cd ..
+#1738825074
+cd lab3
+#1738825075
+ls
+#1738825081
+cd ..
+#1738825093
+git remote -v
+#1738825104
+git status
+#1738825137
+git add .
+#1738825222
+git commit -m  "latest lab works"
+#1738825306
+git push origin main
+#1738825915
+cd 201-W25
+#1738825916
+ls
+#1738825950
+cd ..
+#1738825954
+cd lab4
+#1738825956
+ls
+#1738825963
+nano read_int
+#1738825978
+nano read_int.c
+#1738827105
+gcc read_int.c
+#1738827107
+ls
+#1738827113
+./a.out 
