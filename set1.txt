@@ -1,4 +1,0 @@
-/cshome/olarinde/test2
-test1
-./test3
-test50
