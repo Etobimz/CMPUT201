@@ -20,3 +20,6 @@ return 0;
 
 
 }
+
+
+#define Q 15

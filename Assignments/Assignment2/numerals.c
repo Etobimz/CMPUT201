@@ -14,7 +14,7 @@ int numeral_conversion(char c) {
     } if (c == 'D'){
         return 500;
     } if (c == 'M'){
-        return 1000;
+        return 1000;=
     }
     return -1;
 }
