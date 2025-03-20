@@ -1,0 +1,3 @@
+Here a string read will fail and the program
+will end on next read "this read fails because
+there is never a closing quote
