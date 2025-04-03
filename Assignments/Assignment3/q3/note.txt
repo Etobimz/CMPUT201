@@ -1,0 +1,2 @@
+Note that while these files are ppm files, you can easily rename them to .in for use
+with your testing script as they are ultimately the input to your program.
